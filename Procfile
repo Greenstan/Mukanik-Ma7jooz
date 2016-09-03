@@ -1,1 +1,1 @@
-web: gunicorn my-spot.wsgi
+web: gunicorn Mukanik_ma7jooz.wsgi
