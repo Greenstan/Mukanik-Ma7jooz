@@ -1,1 +1,1 @@
-web: gunicorn Mukanik_ma7jooz.wsgi
+web: gunicorn project.wsgi
