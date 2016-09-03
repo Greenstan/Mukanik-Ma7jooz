@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %} 
+
+<style>
+    
+    .red {
+        width: 100%  !important;
+        color: white !important;
+        padding: 14px 20px !important;
+        margin: 8px 0 !important;
+        border: none !important;
+        cursor: pointer !important;
+        background-color: #E25200  !important;
+    }
+    .red:hover {
+      
+      background-color: #E22A00 !important;
+    }
+</style>
+
+<div class="col-md-4" style="margin-left:250px">  
+
+        <form  method="POST" style="color:grey;">
+
+                <div>
+
+                    {% csrf_token %}
+
+                    {{ form.as_p }}
+
+                    <input class="red" type="submit" value="Save" style="width:60%">
+
+                </div>
+
+        </form>
+
+</div> 
+
+    
+{% endblock %}

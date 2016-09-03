@@ -9,7 +9,7 @@
         height: 80%;
         margin: 0;
         padding: 0;
-        cursor: url('/Users/greenstan/Desktop/deathstroke.jpeg');
+        
       }
       #map {
         height: 100%;
@@ -17,28 +17,11 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
-    <script>
+  <iframes src="https://www.google.com/maps/d/embed?mid=1ECL3qNSA6aV0zTp0bM_NLsVKkv8" width="640" height="480"></iframe>
+  
+  <script>  
 
-    var x = event.clientX;
-    var y = event.clientY;
-      function initMap() {
-        var myLatLng = {lat: -25.365, lng: 131.044};
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwvwImGLXGYV43uVe84QL4wyZOSGURrA0&callback=initMap">
-    </script>
+  </script>
   </body>
 </html>
